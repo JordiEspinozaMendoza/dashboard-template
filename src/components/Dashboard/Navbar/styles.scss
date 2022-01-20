@@ -1,0 +1,31 @@
+.dashboard__navbar {
+    height: 50px;
+    box-shadow: inset 0 1px #f7fafc;
+    position: fixed;
+    width: calc(100% - 6rem);
+    z-index: 1;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1px;
+    background-color: #ccc;
+
+    .dashboard__navbar__title,
+    .dashboard__navbar__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .dashboard__navbar__title {
+        padding-left: 2rem;
+    }
+
+    .dashboard__navbar__subtitle {
+        padding-right: 2rem;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}

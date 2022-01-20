@@ -1,0 +1,40 @@
+@import "assets/sass/breakpoints.sass"
+.dashboard__page
+    padding: 0 10rem 2rem 10rem
+.dashboard__subpage
+    animation: appearPage 0.5s ease-in-out
+.dashboard__header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1.5rem
+.no__dashboard__items
+    height: 60vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+@keyframes appearPage
+    0%
+        opacity: 0
+        transform: translateY(20px)
+
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+@media screen and (max-width:$xxlarge)
+
+@media screen and (max-width:$xlarge)
+
+@media screen and (max-width:$large)
+    .dashboard__page
+        padding: 0 4rem 2rem 4rem
+@media screen and (max-width:$medium)
+    .dashboard__page
+        padding: 0 4rem 2rem 4rem
+@media screen and (max-width:$small)
+    .dashboard__page
+        padding: 0 2rem 2rem 2rem
+
+@media screen and (max-width:$xs)

@@ -1,0 +1,55 @@
+@import "../../../assets/scss/breakpoints.scss";
+
+.sidebar__dashboard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+
+    .sidebar__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.5rem 0;
+        flex-direction: column;
+        background-color: #111;
+
+        p {
+            color: #fff;
+            font-size: 0.7rem;
+            margin-top: 0.4rem;
+            margin-bottom: 0;
+        }
+
+        i {
+            color: #fff;
+            margin: 0 auto;
+            display: block;
+            font-size: 1.2rem;
+        }
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:$xxlarge) {}
+
+@media screen and (max-width:$xlarge) {}
+
+@media screen and (max-width:$large) {}
+
+@media screen and (max-width:$medium) {
+    .sidebar__dashboard {
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:$small) {}
+
+@media screen and (max-width:$xs) {}

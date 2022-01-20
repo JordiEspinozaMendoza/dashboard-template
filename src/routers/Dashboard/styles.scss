@@ -1,0 +1,44 @@
+@import "../../assets/scss/breakpoints.scss";
+
+.dashboard__router {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 6rem) 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar main";
+    overflow: hidden;
+
+    .sidebar__dashboard {
+        grid-area: sidebar;
+    }
+
+    .dashboard__content {
+        grid-area: main;
+        margin-top: 3rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:$xxlarge) {}
+
+@media screen and (max-width:$xlarge) {}
+
+@media screen and (max-width:$large) {}
+
+@media screen and (max-width:$medium) {
+    .dashboard__router {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4rem;
+        grid-template-areas: "main""sidebar";
+
+        .dashboard__navbar {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:$small) {}
+
+@media screen and (max-width:$xs) {}
